@@ -19,7 +19,7 @@ public class VilleController {
 	@Autowired
 	VilleBLO villeBLOService;
 	
-	@RequestMapping(value="/ville", method=RequestMethod.GET)
+	@RequestMapping(value="/ville", method=RequestMethod.GET) 
 	@ResponseBody
 	public ArrayList<Ville> get(@RequestParam(required=false, value="codePostal") String codePostal) {
 		System.out.println("get : " + codePostal);
