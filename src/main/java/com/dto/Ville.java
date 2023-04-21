@@ -5,6 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Entity
 @Table(name="ville_france")
 public class Ville {
@@ -30,8 +34,7 @@ public class Ville {
 	@Column(name="Longitude")
 	private String longitude;
 	
-	public Ville()
-	{
+	public Ville() {
 		
 	}
 
@@ -90,8 +93,6 @@ public class Ville {
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
-	
-	
 	
 
 }
