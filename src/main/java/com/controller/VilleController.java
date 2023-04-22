@@ -27,10 +27,10 @@ public class VilleController {
         return villeDAO.findAll();
     }
 	
-	@GetMapping("/villes/{code_commune}")
-	public Optional<Ville> getVilleById(@PathVariable String code_commune)
+	@GetMapping("/villes/{codeCommune}")
+	public Optional<Ville> getVilleById(@PathVariable String codeCommune)
 	{
-		return villeDAO.findById(code_commune);
+		return villeDAO.findById(codeCommune);
 	} 
 	
 	@PostMapping("/villes")
@@ -39,10 +39,10 @@ public class VilleController {
 		villeDAO.save(ville);
 	}
 	
-	@DeleteMapping("/villes/{code_commune")
-    public void deleteVille(@PathVariable String code_commune) {
-        if(villeDAO.existsById(code_commune)) {
-            villeDAO.deleteById(code_commune);
+	@DeleteMapping("/villes/{codeCommune")
+    public void deleteVille(@PathVariable String codeCommune) {
+        if(villeDAO.existsById(codeCommune)) {
+            villeDAO.deleteById(codeCommune);
         }
     }
 

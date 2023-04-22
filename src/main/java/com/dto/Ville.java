@@ -10,19 +10,19 @@ import javax.persistence.Table;
 public class Ville {
 	
 	@Id
-	private String Code_commune_INSEE;
+	private String codeCommune;
 	
 	@Column(name="Nom_commune")
-	private String nom_commune;
+	private String nomCommune;
 	
 	@Column(name="Code_postal")
-	private String code_postal;
+	private String codePostal;
 	
 	@Column(name="Libelle_acheminement")
-	private String libelle_acheminement;
+	private String libelleAcheminement;
 	
 	@Column(name="Ligne_5")
-	private String ligne_5;
+	private String ligne5;
 	
 	@Column(name="Latitude")
 	private String latitude;
@@ -31,47 +31,47 @@ public class Ville {
 	private String longitude;
 	
 	public Ville() {
-		
+		// Auto-generated constructor stub
 	}
 
-	public String getCode_commune_INSEE() {
-		return Code_commune_INSEE;
+	public String getCodeCommune() {
+		return codeCommune;
 	}
 
-	public void setCode_commune_INSEE(String code_commune_INSEE) {
-		Code_commune_INSEE = code_commune_INSEE;
+	public void setCodeCommune(String codeCommune) {
+		this.codeCommune = codeCommune;
 	}
 
-	public String getNom_commune() {
-		return nom_commune;
+	public String getNomCommune() {
+		return nomCommune;
 	}
 
-	public void setNom_commune(String nom_commune) {
-		this.nom_commune = nom_commune;
+	public void setNomCommune(String nomCommune) {
+		this.nomCommune = nomCommune;
 	}
 
-	public String getCode_postal() {
-		return code_postal;
+	public String getCodePostal() {
+		return codePostal;
 	}
 
-	public void setCode_postal(String code_postal) {
-		this.code_postal = code_postal;
+	public void setCodePostal(String codePostal) {
+		this.codePostal = codePostal;
 	}
 
-	public String getLibelle_acheminement() {
-		return libelle_acheminement;
+	public String getLibelleAcheminement() {
+		return libelleAcheminement;
 	}
 
-	public void setLibelle_acheminement(String libelle_acheminement) {
-		this.libelle_acheminement = libelle_acheminement;
+	public void setLibelleAcheminement(String libelleAcheminement) {
+		this.libelleAcheminement = libelleAcheminement;
 	}
 
-	public String getLigne_5() {
-		return ligne_5;
+	public String getLigne5() {
+		return ligne5;
 	}
 
-	public void setLigne_5(String ligne_5) {
-		this.ligne_5 = ligne_5;
+	public void setLigne5(String ligne5) {
+		this.ligne5 = ligne5;
 	}
 
 	public String getLatitude() {
@@ -88,7 +88,6 @@ public class Ville {
 
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
-	}
-	
+	}	
 
 }
