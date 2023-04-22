@@ -10,6 +10,7 @@ import javax.persistence.Table;
 public class Ville {
 	
 	@Id
+	@Column(name="Code_commune_INSEE")
 	private String codeCommune;
 	
 	@Column(name="Nom_commune")
